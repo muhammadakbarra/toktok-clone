@@ -50,11 +50,18 @@ export interface UploadError {
 }
 
 //  COMPONENT TYPES
+export interface CommentsHeaderCompTypes {
+    params: { userId: string; postId: string };
+    post: PostWithProfile;
+}
 export interface PostMainCompTypes {
     post: PostWithProfile;
 }
 export interface PostMainLikesCompTypes {
     post: PostWithProfile;
+}
+export interface PostPageTypes {
+    params: { userId: string; postId: string };
 }
 export interface PostUserCompTypes {
     post: Post;
